@@ -4,9 +4,6 @@
         "vid": "0xabcd",
         "sn": "1790PDN002705",
         "mac1": "F4B520148374"
-        "sataPortMap": "2",
-        "diskIdxMap": "00",
-        "sasidxmap": "0"
     },
     "synoinfo": {},
     "ramdisk_copy": {},

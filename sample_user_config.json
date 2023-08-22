@@ -7,5 +7,5 @@
     },
     "synoinfo": {},
     "ramdisk_copy": {},
-    "extensions": ["r8168","acpid","misc"]
+    "extensions": []
 }

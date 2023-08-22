@@ -79,15 +79,6 @@ jobs:
         run: |
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-misc.json
 
-      - name: 预处理PAT
-        if: endsWith(matrix.version, '42218') && startsWith(matrix.platform, 'ds920')
-        run: |
-          sed -i 's/debian:8-slim/debian:10-slim/g' global_config.json
-          ./redpill_tool_chain.sh build ${{matrix.platform}}-${{matrix.version}}
-          ./redpill_tool_chain.sh pat ${{matrix.platform}}-${{matrix.version}}
-          sed -i 's/debian:10-slim/debian:8-slim/g' global_config.json
-          ./redpill_tool_chain.sh build ${{matrix.platform}}-${{matrix.version}}
-
       - name: 编译引导镜像
         run: |
           ./redpill_tool_chain.sh auto ${{matrix.platform}}-${{matrix.version}}

@@ -1,11 +1,11 @@
 {
     "extra_cmdline": {
-        "pid": "0x0001",
-        "vid": "0x46f4",
-        "sn": "1234XXX123",
-        "mac1": "XXYYXXYYXXYY"
+        "pid": "0x1234",
+        "vid": "0xabcd",
+        "sn": "1790PDN002705",
+        "mac1": "F4B520148374"
     },
     "synoinfo": {},
     "ramdisk_copy": {},
-    "extensions": []
+    "extensions": ["r8168","acpid","boot-wait","misc"]
 }
